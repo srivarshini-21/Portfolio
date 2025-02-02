@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay loop muted id="background-video">
+        <source src="BackgroundVideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="glowing-nav">
+            <div class="profile-picture-container">
+               <img src="Profile.jpg" alt="Your Photo" class="profile-photo">
+            </div>
+            <ul>
+                <li><a href="#about">About <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#education">Education <i class="fa-solid fa-book"></i></i></a></li>
+                <li><a href="#projects">Projects <i class="fa-solid fa-lightbulb"></i></a></li>
+                <li><a href="#experience">Experience <i class="fa-solid fa-brain"></i></a></li>
+                <li><a href="#contact">Contact <i class="fa-solid fa-address-book"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Toggle Button -->
+    <button class="mobile-nav-toggle">☰</button>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#about">About <i class="fa-solid fa-user"></i></a></li>
+            <li><a href="#education">Education <i class="fa-solid fa-book"></i></i></a></li>
+            <li><a href="#projects">Projects <i class="fa-solid fa-lightbulb"></i></a></li>
+            <li><a href="#experience">Experience <i class="fa-solid fa-brain"></i></a></li>
+            <li><a href="#contact">Contact <i class="fa-solid fa-address-book"></i></a></li>            
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <h1 id="typewriter-text"></h1>
+    <main class="main-content">
+        <!-- Sections -->
+        <section id="about" class="container fade-in">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                        <li>Motivated and detail-oriented Information Science student with a strong foundation in full-stack development, Java programming, and machine learning.</li> <li>Passionate about building interactive web applications, AI-driven solutions, and efficient algorithms. Experienced in developing projects using Flask and MySQL.</li> <li>Enthusiastic about participating in hackathons, research, and software development challenges. Adept at problem-solving, collaborating in team environments, and continuously learning new technologies.</li>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="container slide-in">
+            <div class="about-text">
+                <h2>Education</h2>
+                <p>
+                    Bachelor of Engineering (B.E.) in Information Science & Engineering<br>
+                    Visvesvaraya Technological University (VTU), Jyothy Institute of Technology, Bangalore<br>
+                    2022 – Present | Current CGPA: 9.0/10<br>
+                    Relevant Coursework: Data Structures, Machine Learning, Web Development, DBMS
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="container fade-in">
+            <h2>Projects</h2>
+            <div class="project-container">
+            <a href="https://smart-recipe-planner.onrender.com/"><div class="project-card">
+                <img src="smart-recipe.png" alt="Project 1">
+                <p>Smart-Recipe Planner project is a web application that helps users find recipes based on their available ingredients and dietary preferences. It also allows users to create an account, log in, and save their favorite recipes.</p>
+            </div></a>
+            <a href="https://srivarshini-21.github.io/Stock-Dashboard/"><div class="project-card">
+                <img src="stock-dash.png" alt="Project 2">
+                <p>Stock-Dashboard is a web application that provides real-time stock market data, visualizations, and analysis tools to help users make informed investment decisions.</p>
+            </div></a>
+            </div>
+        </section>
+
+        <section id="experience" class="container slide-in">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <a href="https://1jt22is053.wixsite.com/equitalk">IBMSkillsBuild and CSRBOX</a>
+                <p><strong>Intern | Remote</strong> <em>Jul. 2024 – Aug. 2024</em></p>
+                <ul>
+                    <li>Provided exemplary service to guests in a high-end restaurant setting, including recommending wine pairings and making menu suggestions.</li>
+                    <li>Developed an interactive chatbot for Equitalk, a platform focused on gender equality and pay parity, using IBM Watsonx Assistant.</li>
+                    <li>Designed and implemented the chatbot's conversational flows and responses to address user inquiries related to gender equity and salary fairness.</li>
+                    <li>Integrated the chatbot with the Equitalk website through Wix Studio, enhancing user engagement and providing accessible information on critical topics.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="container fade-in">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <!-- Resume Download Button -->
+         <a href="Srivarshini_resume_vivnovation.pdf" download class="resume-btn">Download Resume</a>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h2>Contact Info</h2>
+                    <p>Email: <a>srivarshini0402@gmail.com</a></p>
+                    <p>Location: Bangalore, India</p>
+                </div>
+                <div class="footer-social">
+                    <h2>Follow Me</h2>
+                    <a href="https://github.com/srivarshini-21" target="_blank">GitHub <i class="fa-brands fa-github"></i></a><br>
+                    <a href="https://www.linkedin.com/in/srivarshini-r-s-21f2004" target="_blank">LinkedIn <i class="fa-brands fa-linkedin"></i></a><br>
+                </div>
+            </div>
+            <p>&copy; 2025 Srivarshini R S. All rights reserved.</p>
+        </footer>
+        
+
+        
+        
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
