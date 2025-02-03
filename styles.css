@@ -474,6 +474,18 @@ footer p {
     .profile-photo-container {
         display: none;
     }
+
+    .projects-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width: 577px) {
