@@ -152,33 +152,10 @@ section {
     border-radius: 10px;
 }
 
-/* Apply flex directly to the parent of about & education */
-#about, #education {
-    display: flex;
-    padding: 20px;
-    background: #222;
-    color: white;
-    border-radius: 10px;
-}
 
 .about-text {
     margin-left: 15px;
 }
-
-/* Target their parent and apply flex */
-#about + #education {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-/* Responsive: Stack on small screens */
-@media (max-width: 768px) {
-    #about + #education {
-        flex-direction: column;
-    }
-}
-
 .visible {
     opacity: 1;
     transform: translateY(0);
