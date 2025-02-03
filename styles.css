@@ -34,7 +34,7 @@ html {
 header {
     position: fixed;
     height: 100%;
-    width: 150px;  /* Default width */
+    width: 165px;  /* Default width */
     top: 0;
     left: 0;
     z-index: 1000;
@@ -77,7 +77,7 @@ header:hover {
 
 /* Move with Navbar on Hover */
 header:hover .profile-picture-container {
-    transform: translateX(10px); /* Moves right when nav expands */
+    transform: translateX(5px); /* Moves right when nav expands */
 }
 
 /* Improved Navigation Menu */
@@ -460,6 +460,27 @@ footer p {
     .footer-info, .footer-social {
         margin-bottom: 20px;
     }
+
+    .profile-photo-mobile {
+        display: block;
+        margin: 70px 10px auto;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 198, 255, 0.8);
+    }
+
+    .profile-photo-container {
+        display: none;
+    }
+}
+
+@media (min-width: 577px) {
+    .profile-photo-mobile {
+        display: none;
+    }
 }
 
 /* Mobile Navigation */
@@ -529,5 +550,29 @@ footer p {
 
     .footer-info, .footer-social {
         margin-bottom: 20px;
+    }
+}
+
+/* Profile Photo for Mobile Screens */
+@media (max-width: 576px) {
+    .profile-photo-mobile {
+        display: block;
+        margin: 70px 10px auto;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 198, 255, 0.8);
+    }
+
+    .profile-photo-container {
+        display: none;
+    }
+}
+
+@media (min-width: 577px) {
+    .profile-photo-mobile {
+        display: none;
     }
 }
