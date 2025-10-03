@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Handle resume download
     const downloadResumeButton = document.querySelector('.resume-btn');
     downloadResumeButton.addEventListener('click', function() {
-        const resumeUrl = 'Srivarshini_resume_vivnovation.pdf'; // Update with the actual path to your resume
+        const resumeUrl = 'Srivarshini_Resume_WP.pdf'; // Update with the actual path to your resume
         const link = document.createElement('a');
         link.href = resumeUrl;
         link.download = 'Resume.pdf';
