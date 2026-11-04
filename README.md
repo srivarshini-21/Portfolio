@@ -1,48 +1,24 @@
-# Portfolio Website
+# Srivarshini R S — Portfolio
 
-This personal portfolio website showcases my skills, experience, and projects. The website is built using HTML, CSS, and JavaScript.
+A responsive personal portfolio built with HTML, CSS and vanilla JavaScript. The visual direction takes cues from cartographic field notes: warm paper tones, forest-green accents, contour lines, editorial typography and concise project storytelling.
 
-## Table of Contents
+## What's inside
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- Intro and about sections with a custom topographic illustration
+- Professional experience and selected project cards
+- Selected projects, skills, certifications, education and workshop details
+- Responsive navigation and reduced-motion-aware reveal transitions
+- Direct email, GitHub, LinkedIn and résumé links
 
-## Features
+## Run locally
 
-- Background video on the homepage
-- Responsive navigation bar with glowing effect
-- Sections for About, Education, Projects, Experience, Skills, and Contact
-- Mobile navigation toggle button
-- Responsive design for different screen sizes
+Open `index.html` in a browser, or serve this folder with any static file server. No build step or package installation is required.
 
-## Technologies Used
+## Updating content
 
-- HTML5
-- CSS3
-- JavaScript
-- Font Awesome for icons
+- Edit text, project details, links and résumé path in `index.html`.
+- Adjust the design tokens and responsive styles in `styles.css`.
+- Update navigation, reveal and project-filter behavior in `script.js`.
+- Keep image assets and the résumé PDF alongside `index.html` so the relative paths continue to work.
 
-## Setup
-
-1. Clone the repository to your local machine:
-    ```bash
-    git clone https://github.com/srivarshini-21/Portfolio.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd Portfolio
-    ```
-
-## Usage
-
-1. Open [index.html](http://_vscodecontentref_/0) in your web browser to view the website.
-2. Customize the content in [index.html](http://_vscodecontentref_/1) to reflect your personal information and projects.
-3. Modify the styles in [styles.css](http://_vscodecontentref_/2) to change the appearance of the website.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+Fonts and icons are loaded from Google Fonts and Font Awesome when available; the page falls back to system fonts if the font service is unavailable.
